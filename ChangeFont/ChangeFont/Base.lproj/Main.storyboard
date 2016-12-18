@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangeFont" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.65000000000000002" contentMode="scaleToFill" text="asdf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kb3-MP-HZD">
+                                <rect key="frame" x="16" y="136" width="343" height="380"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="rof-0y-UK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRm-Fh-hbK">
+                                <rect key="frame" x="126" y="520" width="122" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="IQU-cB-GVk"/>
+                                    <constraint firstAttribute="height" constant="123" id="Raa-pi-t9D"/>
+                                </constraints>
+                                <state key="normal" image="changeFont"/>
+                                <connections>
+                                    <action selector="changeFontBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imK-iH-Vui"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChangeFont Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qku-cq-yEQ">
+                                <rect key="frame" x="16" y="52" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WQL-Ft-UwN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部分字体来源于  ☞  造字工房" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klW-3n-69P">
+                                <rect key="frame" x="184" y="104" width="175" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1HP-K6-kb0"/>
+                                    <constraint firstAttribute="width" constant="175" id="R7D-RS-E30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ficow Shen" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-YI-xlB">
+                                <rect key="frame" x="269" y="639" width="90" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="a7Z-PL-BPO"/>
+                                    <constraint firstAttribute="height" constant="20" id="nmJ-Hg-jNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92146831750000002" green="0.92162638900000005" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kb3-MP-HZD" secondAttribute="trailing" constant="16" id="06M-mM-jhg"/>
+                            <constraint firstItem="klW-3n-69P" firstAttribute="trailing" secondItem="qku-cq-yEQ" secondAttribute="trailing" id="8yl-6f-76O"/>
+                            <constraint firstItem="qku-cq-yEQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GbH-Lp-9dr"/>
+                            <constraint firstItem="qku-cq-yEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kw4-Sy-8Ct"/>
+                            <constraint firstItem="aLy-YI-xlB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KzW-w2-laB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aLy-YI-xlB" secondAttribute="bottom" constant="8" id="NuR-Rn-XfZ"/>
+                            <constraint firstItem="kb3-MP-HZD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="PiA-N0-doD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRm-Fh-hbK" secondAttribute="bottom" constant="24" id="RoR-rg-Z0J"/>
+                            <constraint firstItem="qku-cq-yEQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="YNn-MS-Om0"/>
+                            <constraint firstItem="kb3-MP-HZD" firstAttribute="top" secondItem="qku-cq-yEQ" secondAttribute="bottom" constant="40" id="Zix-Kz-WNp"/>
+                            <constraint firstItem="YRm-Fh-hbK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dyN-Qx-tpF"/>
+                            <constraint firstItem="klW-3n-69P" firstAttribute="top" secondItem="qku-cq-yEQ" secondAttribute="bottom" constant="8" id="nxa-mj-H0b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeFontBtn" destination="YRm-Fh-hbK" id="xMl-NX-CwW"/>
+                        <outlet property="textV" destination="kb3-MP-HZD" id="Rrq-n4-Zkl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="changeFont" width="164" height="171"/>
+    </resources>
+</document>
